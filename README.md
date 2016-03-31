@@ -1,2 +1,2 @@
 # sw-base
-Base libraries for SeweneW's projects
+Base library for SeweneW's projects
