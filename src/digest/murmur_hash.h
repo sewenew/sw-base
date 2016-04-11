@@ -26,7 +26,7 @@ namespace digest {
 
 constexpr uint32_t DEFAULT_SEED = 0;
 
-inline uint64_t murmur_hash(const void *key, int len, uint32_t seed = DEFAULT_SEED) {
+inline uint64_t murmur_hash(const void *key, int len, uint32_t seed = DEFAULT_SEED) noexcept {
     uint64_t res[2];
 #ifdef BUILD_X86
     MurmurHash3_x86_128(key, len, seed, res);
