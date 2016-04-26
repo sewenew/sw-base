@@ -69,7 +69,7 @@ void split(const std::string &str, const std::string &delimiter, Iter result) {
 
     if (delimiter.empty()) {
         std::transform(str.begin(), str.end(), result,
-                [] (char c) { return std::string(1, c); } );
+                [](char c) { return std::string(1, c); });
         return;
     }
 
